@@ -1,0 +1,65 @@
+.hero {
+  height: 100vh;
+  padding-top: 125px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: no-repeat url("../images/hero-bg.jpg") center;
+  background-size: cover;
+
+  @media screen and (min-width: 420px) {
+    align-items: center;
+  }
+
+
+  &__title {
+    font-size: 25px;
+    color: #fff;
+    font-family: "Bw Mode lica Cyrillic Bold", sans-serif;
+    line-height: 1.2;
+    max-width: 740px;
+    padding: 0 10px;
+
+    @media screen and (min-width: 375px) {
+      font-size: 38px;
+    }
+    @media screen and (min-width: 420px) {
+      text-align: center;
+      padding: 0;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 58px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.35;
+    color: #fff;
+    padding: 0 10px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 414px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 420px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 29px;
+    }
+  }
+
+  &__button {
+    margin: 0 20px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+
+}

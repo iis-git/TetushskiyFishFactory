@@ -1,0 +1,44 @@
+button {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.button {
+  background-color: #0F6B8B;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  padding: 25px 42px;
+  transition: background-color .3s ease-out;
+
+  &:hover {
+    background-color: #11a1d3;
+  }
+
+  &--contact {
+    border: 3px solid #FFFFFF;
+    border-radius: 45px;
+    padding: 20px 13px;
+    width: 290px;
+    color: #fff;
+    font-weight: 700;
+    transition: all .3s ease-out;
+
+    &:hover {
+      background-color: #11a1d3;
+      border-color: #11a1d3;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 11px 13px;
+    }
+    
+
+  }
+}
+

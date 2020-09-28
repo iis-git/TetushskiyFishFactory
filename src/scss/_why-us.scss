@@ -1,0 +1,160 @@
+.why-us {
+  background: url("../images/why-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    width: 95%;
+    position: relative;
+    margin-bottom: 75px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+      text-align: left;
+      padding-left: 105px;
+    }
+
+    &:before {
+      content: url("../images/why-1.svg");
+      width: 81px;
+      height: 81px;
+      display: block;
+      position: absolute;
+      left: 0;
+    }
+
+
+    &:nth-child(even) .why-us__sub-title {
+      padding-left: 0;
+      padding-right: 70px;
+
+      @media screen and (min-width: 768px) {
+        padding-left: 105px;
+        padding-right: 0;
+      }
+
+      @media screen and (min-width: 1024px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+
+    &--first {
+      .why-us__text {
+
+        @media screen and (min-width: 1024px) {
+          max-width: 335px;
+        }
+
+      }
+    }
+
+    &--first:before {
+      top: -12px;
+
+
+      @media screen and (min-width: 375px) {
+        left: 20px;
+      }
+
+
+
+      @media screen and (min-width: 1024px) {
+        top: 0;
+        left: 0;
+      }
+  }
+
+    &--second:before {
+    content: url("../images/why-2.svg");
+      top: -10px;
+      left: unset;
+      right: 0;
+
+      @media screen and (min-width: 375px) {
+        right: 10px;
+      }
+
+      @media screen and (min-width: 414px) {
+        right: 40px;
+      }
+
+      @media screen and (min-width: 768px) {
+        left: 0;
+        right: unset;
+      }
+
+      @media screen and (min-width: 1024px) {
+        top: 0;
+      }
+
+    }
+
+    &--third:before {
+      content: url("../images/why-3.svg");
+      top: 0;
+    }
+
+    &--fourth:before {
+      content: url("../images/why-4.svg");
+      top: -13px;
+      left: unset;
+      right: 0;
+
+      @media screen and (max-width: 375px) {
+        right: -18px!important;
+      }
+
+      @media screen and (min-width: 768px) {
+        left: 0;
+        right: unset;
+      }
+
+      @media screen and (min-width: 1024px) {
+        top: 0;
+      }
+    }
+
+  }
+
+  &__sub-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    padding-left: 70px;
+    max-width: 330px;
+
+
+    @media screen and (min-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #365c60;
+    max-width: 400px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: block;
+    max-width: 395px;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Bw Modelica Medium";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("BwModelicaCyrillicDEMO-Medium"), url("../fonts/BwModelicaCyrillicDEMO-Medium.woff2") format("woff2"), url("../fonts/BwModelicaCyrillicDEMO-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bw Modelica Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("BwModelicaCyrillicDEMO-Bold"), url("../fonts/BwModelicaCyrillicDEMO-Bold.woff2") format("woff2"), url("../fonts/BwModelicaCyrillicDEMO-Bold.woff") format("woff");
+}
